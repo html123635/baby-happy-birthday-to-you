@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff3f5">
+  <title>A Little Birthday Love</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="birthday-card">
+    <div class="confetti confetti-one" aria-hidden="true">✦</div>
+    <div class="confetti confetti-two" aria-hidden="true">✧</div>
+    <div class="confetti confetti-three" aria-hidden="true">♡</div>
+    <div class="confetti confetti-four" aria-hidden="true">✿</div>
+
+    <p class="eyebrow">A little note, with lots of love</p>
+    <div class="cake" aria-hidden="true">🎂</div>
+    <input id="birthday-photo-input" class="photo-input" type="file" accept="image/*" aria-label="Choose a birthday photo">
+    <label class="photo-picker" for="birthday-photo-input">
+      <img src="khairun.jpeg" alt="birthday-photo-input">
+      <span id="photo-placeholder">📷 Add a favorite photo</span>
+    </label>
+    <h1>Happy Birthday,<br><span>Dear FRIEND<br>KHAIRUN!</span></h1>
+    <div class="divider" aria-hidden="true"><span>♥</span></div>
+
+    <p class="message">
+      I know today is not an easy day for you. I can't imagine the pain you are going through. On your birthday, I just want you to know that you are not alone. May God give you strength, courage, and peace during this difficult time. Please take care of yourself. I'm always here if you need anything. ❤️
+    </p>
+    <p class="gentle-note">
+     On your birthday, my only wish is that you find courage in difficult times, peace in your heart, and hope for tomorrow. Stay strong. You are not alone. ❤️🙏
+    </p>
+    <h1 class="wish">. I MISS YOU BABY🫂💖</h1> 
+
+    <div class="birthday-controls">
+      <div class="audio-picker">
+        <input id="birthday-audio-input" class="audio-input" type="file" accept="audio/*" aria-label="Choose a song for the birthday card">
+        <label class="audio-button" for="birthday-audio-input">🎵 Choose your song</label>
+        <p id="audio-name" class="audio-name" aria-live="polite">Choose an audio file from your device</p>
+        <audio id="birthday-audio" controls hidden></audio>
+      </div>
+      <fieldset class="theme-picker">
+        <legend>Choose a color theme</legend>
+        <button class="theme-option" type="button" data-theme="rose" aria-pressed="true">🌹 Rose</button>
+        <button class="theme-option" type="button" data-theme="ocean" aria-pressed="false">🌊 Ocean</button>
+        <button class="theme-option" type="button" data-theme="sunshine" aria-pressed="false">☀️ Sunshine</button>
+        <button class="theme-option" type="button" data-theme="mint" aria-pressed="false">🌿 Mint</button>
+      </fieldset>
+      <button id="celebrate-button" type="button">Send her a little sparkle ✨</button>
+    </div>
+    <p id="celebration-message" class="celebration-message" aria-live="polite"></p>
+
+    <p class="signoff">With love, <span>your friend and family</span></p>
+    <h1 class="final-heading">Finally, I will always stay with you.</h1>
+  </main>
+</body>
+</html>
